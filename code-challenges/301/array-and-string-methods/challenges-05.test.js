@@ -243,7 +243,7 @@ const extractVowels = (str) => {
     const regex = /^[aeiou]$/i;
     let charsDelArr = [];
 
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < strArr.length; i++) {
       if (strArr[i].match(regex)) {
           const charGone = strArr.splice(i, 1);
           charsDelArr.push(charGone);
