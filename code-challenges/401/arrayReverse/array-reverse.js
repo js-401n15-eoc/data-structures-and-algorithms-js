@@ -1,5 +1,6 @@
 'use strict';
 
+// for loop
 const arrayReverse = (arr) => {
     if (!arr) return [];
 
@@ -12,15 +13,16 @@ const arrayReverse = (arr) => {
     return arr;
 };
 
+// while loop
 const arrayReverse2 = (arr) => {
     if (!arr) return [];
 
     let left = 0, right = arr.length - 1;
 
-    while (left < right) {
-        let tmp = arr[left];
-        arr[left] = arr[right];
-        arr[right] = tmp;
+    while (right > left) {
+        let tmp = arr[right];
+        arr[right] = arr[left];
+        arr[left] = tmp;
         left++;
         right--;
     }
@@ -28,6 +30,7 @@ const arrayReverse2 = (arr) => {
     return arr;
 };
 
+// recursion
 const arrayReverse3 = (arr) => {
     if (!arr) return [];
 
