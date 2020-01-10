@@ -17,6 +17,7 @@ const howMuchPencil = (str) => {
   let result = [];
   result.push(str);
   let copy = str.split('');
+
   for (let i = 0; i < str.length; i++) {
       copy.splice(0,1);
       result.push(copy.join(''));
@@ -197,7 +198,7 @@ Write a function named totalSumCSV that, given a string of comma-separated value
 const totalSumCSV = (str) => {
   let total = 0;
   const arr = str.split(',');
-  
+
   arr.forEach(num => {
     total += parseInt(num);
   });
@@ -238,19 +239,17 @@ Similarly, extractVowels('The quick brown fox') returns ['Th qck brwn fx', 'eioo
 ------------------------------------------------------------------------------------------------ */
 
 const extractVowels = (str) => {
-    const arr = str.split('');
+    const strArr = str.split('');
     const regex = /^[aeiou]$/i;
-    let result = [];
     let charsDelArr = [];
 
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i].match(regex)) {
-          const charGone = arr.splice(i, 1);
+    for (let i = 0; i < strArr.length; i++) {
+      if (strArr[i].match(regex)) {
+          const charGone = strArr.splice(i, 1);
           charsDelArr.push(charGone);
           i--;
       }
     }
-    result.push(arr.join(''));
     
     charsDelArr.sort((a, b) => {
         if (a < b) {
@@ -264,8 +263,7 @@ const extractVowels = (str) => {
         return 0;
     });
 
-    result.push(charsDelArr.join(''));
-    return result;
+    return [strArr.join(''), charsDelArr.join('')];
 };
 
 /* ------------------------------------------------------------------------------------------------
