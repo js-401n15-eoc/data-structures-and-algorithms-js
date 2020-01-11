@@ -7,7 +7,7 @@ Write a function called reverseArray which takes an array as an argument. Withou
 ## Approach & Efficiency
 ### Algorithm
 - Iterate through the array with 2 pointers, each starting out on the sides and meeting in the middle.
-- During the iteration, reverse 2 values at a time, creating a temp variable to hold one value while substituting it with the other value;
+- During the iteration, reverse 2 values at a time, creating a temp variable to hold one value while substituting it with the other value
 - Return original array for easier testing (can actually be void as operations are being performed in place)
 
 ### Big O:
@@ -15,4 +15,4 @@ Write a function called reverseArray which takes an array as an argument. Withou
 - Space: O(1)
 
 ## Solution
-![Array Reverse](../../../assets/arrayReverse.jpg "array reverse")
+![Array Reverse](../../../assets/array-reverse.jpg "array reverse")
