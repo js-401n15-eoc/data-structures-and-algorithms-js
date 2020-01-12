@@ -1,4 +1,4 @@
-const { shiftArray } = require('./array-shift.js');
+const { shiftArray, removeMid } = require('./array-shift.js');
 
 describe('shiftArray', () => {
   it('can return a single element array even with a falsy array value', () => {
@@ -32,4 +32,17 @@ describe('shiftArray', () => {
     expect(shiftArray(evenLenArr, num)).toEqual(expectedArr1);
     expect(shiftArray(oddLenArr, num)).toEqual(expectedArr2);
   });
+});
+
+describe('removeMid', () => {
+ it('can remove the middle element from an array with existing values', () => {
+  const arr1 = [1];
+  const arr2 = [1, 2];
+  const arr3 = [1, 2, 3];
+  const arr4 = [1, 2, 3, 4];
+  expect(removeMid(arr1)).toEqual([]);
+  expect(removeMid(arr2)).toEqual([1]);
+  expect(removeMid(arr3)).toEqual([1, 3]);
+  expect(removeMid(arr4)).toEqual([1, 2, 4]);
+ }); 
 });

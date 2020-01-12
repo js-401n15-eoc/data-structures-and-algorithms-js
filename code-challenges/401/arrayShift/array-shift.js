@@ -26,13 +26,22 @@ const shiftArray = (arr, num) => {
 const removeMid = (arr) => {
   if (!arr) return arr;
 
-  const mid = Math.round(arr.length / 2);
-
-  for (let i = mid; i < arr.length; i++) {
-    arr[i] = arr[i + 1];
+  switch (arr.length) {
+    case 1:
+    case 2:
+      arr.pop();
+      break;
+    case 3:
+      arr[1] = arr.pop();
+      break;
+    default:
+      const mid = Math.round(arr.length / 2);
+      for (let i = arr.length - 1; i > mid; i--) {
+        arr[i-1] =  arr.pop();
+      }
+      break;
   }
 
-  arr.length--;
   return arr;
 };
 
