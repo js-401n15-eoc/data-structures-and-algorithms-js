@@ -13,8 +13,8 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 - return -1 if target not found
 
 ### Big O:
-- Time: O(N)
-- Space: O(log n)
+- Time: O(log n)
+- Space: O(1)
 
 ## Solution
 ![Binary Search](../../../assets/array-binary-search.jpg "binary search")
