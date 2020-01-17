@@ -15,4 +15,4 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 - Space: O(1)
 
 ## Solution
-![Array Reverse](../../../assets/array-reverse.jpg "array reverse")
+![Binary Search](../../../assets/binary-search.jpg "binary search")
