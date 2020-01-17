@@ -15,4 +15,12 @@ describe('arrayBinarySearch', () => {
         expect(arrayBinarySearch(arr, 4)).toEqual(3);
         expect(arrayBinarySearch(arr, 5)).toEqual(4);
     });
+
+    it('can return target index for arrays of various lengths', () => {
+        expect(arrayBinarySearch([1, 2], 2)).toEqual(1);
+        expect(arrayBinarySearch([1], 1)).toEqual(0);
+        expect(arrayBinarySearch([0, 1], 0)).toEqual(0);
+        expect(arrayBinarySearch([4, 5, 6], 6)).toEqual(2);
+        expect(arrayBinarySearch([7, 10, 12, 14, 16], 10)).toEqual(1);
+    });
 });
