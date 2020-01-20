@@ -20,4 +20,10 @@ describe('sumOfEachRow', () => {
         let output2 = [6, -2, 9];
         expect(sumOfEachRow(input2)).toEqual(output2);
     });
+
+    it('can handle empty arrays', () => {
+        let input1 = [ [], [], [] ];
+        let output1 = [0, 0, 0];
+        expect(sumOfEachRow(input1)).toEqual(output1);
+    });
 })
