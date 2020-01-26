@@ -9,9 +9,11 @@ describe('linkedList', () => {
         linkedList = new LinkedList();
     });
 
-    it('can add values to a linked list with insert()', () => {
+    it('can instantiate an empty linked list', () => {
         expect(linkedList.head).toEqual(null);
+    });
 
+    it('can add values to a linked list with insert()', () => {
         linkedList.insert(3);
         expect(linkedList.head.value).toEqual(3);
         
