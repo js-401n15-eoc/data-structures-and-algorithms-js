@@ -9,4 +9,4 @@ Data structures and algorithms repo for Code Fellows JavaScript 401 course
 4. [Whiteboard Challenge 04: Sum of Each Row](/code-challenges/401/arrayBinarySearch/README.md "Whiteboard Challenge 04: Sum of Each Row")
 
 ### Data Structures
- [Linked List Implementation](/data-structures/linkedList/README.md "Linked List Implementation")
+1. [Linked List Implementation](/data-structures/linkedList/README.md "Linked List Implementation")
