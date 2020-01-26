@@ -9,7 +9,7 @@ Within your LinkedList class, include a head property. Upon instantiation, an em
 ### Approach
 - create a current variable holding a reference to head when traversal is required
 - traverse through linked list with a while loop
-- re-assign references to head and .next as needed
+- re-assign references to head, current, and .next as needed
 
 ### Efficiency
 **insert()**: Time: O(1), Space: O(1)
@@ -18,5 +18,5 @@ Within your LinkedList class, include a head property. Upon instantiation, an em
 
 ## API
 **insert()**: takes any value as an argument and adds a new node with that value to the head of the list with an O(1) time performance
-**includes()**: takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
+**includes()**: takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list
 **toString()**: takes in no arguments and returns a string representing all the values in the Linked List, formatted as: `"{ a } -> { b } -> { c } -> NULL"`
