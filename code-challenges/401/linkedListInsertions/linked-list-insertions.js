@@ -33,6 +33,8 @@ class LinkedListInsertions extends LinkedList {
       }
       current = current.next;
     }
+
+    throw new Error('value does not exist in linked list');
   }
 
   insertAfter(value, newValue) {
@@ -46,6 +48,8 @@ class LinkedListInsertions extends LinkedList {
       }
       current = current.next;
     }
+
+    throw new Error('value does not exist in linked list');
   }
 }
 
