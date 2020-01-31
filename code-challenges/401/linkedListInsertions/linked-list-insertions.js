@@ -5,7 +5,7 @@ const { LinkedList, Node } = require('../../../data-structures/linkedList/linked
 class LinkedListInsertions extends LinkedList {
   append(value) {
     const newNode = new Node(value);
-    if (this.head === null) {
+    if (!this.head) {
       this.head = newNode;
       return;
     }
