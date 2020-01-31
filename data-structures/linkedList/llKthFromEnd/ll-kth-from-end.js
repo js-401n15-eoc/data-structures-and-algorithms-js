@@ -2,7 +2,7 @@
 const { LinkedList } = require('../linked-list.js');
 
 class LLKthFromEnd extends LinkedList {
-  kthValueFromEnd(k) {
+  kthFromEnd(k) {
     if (k < 0) { throw new Error('input value out of range'); }
 
     let walker = this.head;
@@ -14,8 +14,9 @@ class LLKthFromEnd extends LinkedList {
       distance++;
     }
 
+    if (k > distance) { throw new Error('input value out of range'); }
+
     let diff = distance - k;
-    if (diff < 0) { throw new Error('input value out of range'); }
 
     while (diff > 1) {
       diff--;

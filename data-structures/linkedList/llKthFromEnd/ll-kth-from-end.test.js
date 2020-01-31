@@ -13,8 +13,10 @@ describe('LLKthFromEnd', () => {
     kthFromEndLL.insert(3);
     kthFromEndLL.insert(1);
 
-    expect(kthFromEndLL.kthValueFromEnd(0)).toEqual(2);
-    expect(kthFromEndLL.kthValueFromEnd(2)).toEqual(3);
+    expect(kthFromEndLL.kthFromEnd(0)).toEqual(2);
+    expect(kthFromEndLL.kthFromEnd(1)).toEqual(8);
+    expect(kthFromEndLL.kthFromEnd(2)).toEqual(3);
+    expect(kthFromEndLL.kthFromEnd(3)).toEqual(1);
   });
 
   it('can throw an error for k values out of range', () => {
@@ -23,7 +25,7 @@ describe('LLKthFromEnd', () => {
     kthFromEndLL.insert(3);
     kthFromEndLL.insert(1);
 
-    expect(() => kthFromEndLL.kthValueFromEnd(-1)).toThrow();
-    expect(() => kthFromEndLL.kthValueFromEnd(6)).toThrow();
+    expect(() => kthFromEndLL.kthFromEnd(-1)).toThrow();
+    expect(() => kthFromEndLL.kthFromEnd(6)).toThrow();
   });
 });
