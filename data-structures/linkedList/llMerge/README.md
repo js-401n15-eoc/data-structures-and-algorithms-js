@@ -10,7 +10,7 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
 - iterate through while loop with condition that neither pointer is null
 - re-attach pointers so that values are alternating
 - handle case for first LL not having nodes to iterate through but second LL having nodes left
-- return first LL
+- return first linked list
 
 ### Big O:
 - Time: O(n)
