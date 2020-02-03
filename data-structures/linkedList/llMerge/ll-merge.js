@@ -1,11 +1,8 @@
 'use strict';
 
 const mergeLists = (list1, list2) => {
-    let head1 = list1.head;
-    let head2 = list2.head;
-
-    if (!head1) return list2;
-    if (!head2) return list1;
+    if (!list1 || !list1.head) return list2;
+    if (!list2 || !list2.head) return list1;
 
     let curr1 = list1.head;
     let curr2 = list2.head;
