@@ -7,8 +7,7 @@ Data structures and algorithms repo for Code Fellows JavaScript 401 course
 2. [Whiteboard Challenge 02: Array Shift](/code-challenges/401/arrayShift/README.md "Whiteboard Challenge 02: Array Shift")
 3. [Whiteboard Challenge 03: Array Binary Search](/code-challenges/401/arrayBinarySearch/README.md "Whiteboard Challenge 03: Array Binary Search")
 4. [Whiteboard Challenge 04: Sum of Each Row](/code-challenges/401/arrayBinarySearch/README.md "Whiteboard Challenge 04: Sum of Each Row")
-5. [Whiteboard Challenge 05: Linked List Insertions](/code-challenges/401/linkedListInsertions/README.md "Whiteboard Challenge 05: Linked List Insertions")
-6. [Whiteboard Challenge 06: K-th Value from the End of LL](/code-challenges/401/linkedListInsertions/README.md "Whiteboard Challenge 06: K-th Value from the End of LL")
-
-### Data Structures
-1. [Linked List Implementation](/data-structures/linkedList/README.md "Linked List Implementation")
+5. [Whiteboard Challenge 05:: Linked List Implementation](/data-structures/linkedList/README.md "Whiteboard Challenge 05:: Linked List Implementation")
+6. [Whiteboard Challenge 06: Linked List Insertions](/code-challenges/401/linkedListInsertions/README.md "Whiteboard Challenge 05: Linked List Insertions")
+7. [Whiteboard Challenge 07: K-th Value from the End of LL](/data-structures/linkedList/llKthFromEnd/README.md "Whiteboard Challenge 06: K-th Value from the End of LL")
+8. [Whiteboard Challenge 08: Linked List Merge](/data-structures/linkedList/llMerge/README.md "Whiteboard Challenge 07: Linked List Merge")
