@@ -1,9 +1,11 @@
 'use strict';
-const { LinkedList } = require('../linked-list.js');
+const LinkedList = require('../linked-list.js');
 
 class LLKthFromEnd extends LinkedList {
   kthFromEnd(k) {
-    if (k < 0) { throw new Error('input value out of range'); }
+    if (k < 0) {
+      throw new Error('input value out of range');
+    }
 
     let walker = this.head;
     let runner = this.head;
@@ -14,7 +16,9 @@ class LLKthFromEnd extends LinkedList {
       distance++;
     }
 
-    if (k > distance) { throw new Error('input value out of range'); }
+    if (k > distance) {
+      throw new Error('input value out of range');
+    }
 
     let diff = distance - k;
 
