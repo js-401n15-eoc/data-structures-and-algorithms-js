@@ -11,13 +11,15 @@ const mergeLists = (list1, list2) => {
     let curr2 = list2.head;
 
     while (curr1 && curr2) {
-        let tmp = curr1.next;
+        let tmp1 = curr1.next;
         curr1.next = curr2;
-        curr1 = tmp;
-        curr2 = curr2.next;
+        curr2 = tmp1;
+        curr1 = curr1.next;
     }
 
     if (curr2) { curr1.next = curr2; }
 
     return list1;
 }
+
+module.exports = mergeLists;
