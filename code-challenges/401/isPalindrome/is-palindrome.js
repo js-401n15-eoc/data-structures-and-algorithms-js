@@ -1,8 +1,11 @@
 'use strict';
 
-const isPalindrome = function(head) {
-  if (!head || !head.next) return true;
+const isPalindrome = ll => {
+  if (!ll || !ll.head) {
+    return true;
+  }
 
+  const head = ll.head;
   let slow = head;
   let fast = head;
 
@@ -15,7 +18,7 @@ const isPalindrome = function(head) {
   fast = head;
 
   while (slow) {
-    if (slow.val !== fast.val) {
+    if (slow.value !== fast.value) {
       return false;
     }
     slow = slow.next;
