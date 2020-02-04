@@ -39,4 +39,4 @@ output: false
 
 ## Solution
 
-![Linked List Palindrome](../../../assets/linked-list-palindrome.jpg 'linked list palindrome')
+![Linked List Palindrome](../../../assets/is-palindrome.jpg "linked list palindrome")
