@@ -1,6 +1,5 @@
 'use strict';
 
-
 class LinkedList {
   constructor() {
     this.head = null;
@@ -15,7 +14,9 @@ class LinkedList {
   includes(value) {
     let current = this.head;
     while (current) {
-      if (current.value === value) { return true; }
+      if (current.value === value) {
+        return true;
+      }
       current = current.next;
     }
     return false;
@@ -39,4 +40,4 @@ class Node {
   }
 }
 
-module.exports = { LinkedList, Node };
+module.exports = LinkedList;
