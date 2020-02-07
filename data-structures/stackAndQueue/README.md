@@ -42,6 +42,22 @@ This is a data structure that contains a group of values that are added and remo
 
 ### Efficiency
 
+#### Stack
+
+**push()**: O(1)
+**pop()**: O(1)
+**peek()**: O(1)
+**isEmpty()**: O(1)
+**print()**: O(N)
+
+#### Queue
+
+**enqueue()**: O(1)
+**dequeue()**: O(1)
+**peek()**: O(1)
+**isEmpty()**: O(1)
+**print()**: O(N)
+
 ## API
 
 ### Stack
@@ -58,3 +74,4 @@ This is a data structure that contains a group of values that are added and remo
 **dequeue()**: does not take any argument, removes the node from the front of the queue, and returns the node’s value\
 **peek()**: does not take an argument and returns the value of the node located in the front of the queue, without removing it from the queue
 **isEmpty()**: does not take an argument, and returns a boolean indicating whether or not the queue is empty
+**print()**: takes in no arguments and console logs all of the values one by one while dequeueing them from the queue
