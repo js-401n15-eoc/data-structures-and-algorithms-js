@@ -32,8 +32,6 @@ output: false
 
 ### Big O:
 
-####
-
 - Time: O(N)
 - Space: O(1)
 
