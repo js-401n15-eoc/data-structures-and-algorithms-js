@@ -64,4 +64,12 @@ describe('AnimalShelter', () => {
     expect(shelter.dequeue('dog')).toEqual(dog2);
     expect(shelter.dequeue('cat')).toEqual(cat2);
   });
+
+  it('can avoid dequeueing if animal does not exist', () => {
+    shelter.enqueue(cat1);
+    expect(shelter.dequeue('dog')).toEqual(null);
+
+    shelter.dequeue('cat');
+    expect(shelter.dequeue('cat')).toEqual(null);
+  });
 });
