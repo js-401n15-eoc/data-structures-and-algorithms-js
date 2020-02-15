@@ -1,5 +1,9 @@
 'use strict';
 
-class Animal { }
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+}
 
 module.exports = Animal;
