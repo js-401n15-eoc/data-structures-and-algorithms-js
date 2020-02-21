@@ -2,6 +2,10 @@
 const Queue = require('../../../data-structures/stackAndQueue/queue.js');
 
 const eeneyMeeneyMineyMoe = (arr, k) => {
+  if (k < 1) throw 'Error: k must be 1 or greater';
+  if (!arr || !arr.length) { return null; }
+  if (arr.length === 1) { return arr[0]; }
+
   let queue = new Queue();
   let count = 0;
   let tries = 0;
@@ -12,13 +16,10 @@ const eeneyMeeneyMineyMoe = (arr, k) => {
 
   while (tries < arr.length - 1) {
     while (count < k - 1) {
-      const valToDequeue = queue.dequeue();
-      console.log('rotating this:', valToDequeue);
-      queue.enqueue(valToDequeue);
+      queue.enqueue(queue.dequeue());
       count++;
     }
-    const valToRemove = queue.dequeue();
-    console.log('val to remove: ', valToRemove);
+    queue.dequeue();
     tries++;
     count = 0;
   }
