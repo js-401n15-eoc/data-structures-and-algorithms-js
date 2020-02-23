@@ -16,5 +16,5 @@ Data structures and algorithms repo for Code Fellows JavaScript 401 course
 10. [Whiteboard Challenge 10: Stack and Queue Implementation](/data-structures/stackAndQueue/README.md "Whiteboard Challenge 10: Stack and Queue Implementation")
 11. [Whiteboard Challenge 11: Queue with Two Stacks](/code-challenges/401/queueWithStacks/README.md "Whiteboard Challenge 11: Queue with Two Stacks")
 12. [Whiteboard Challenge 12: FIFO Animal Shelter](/code-challenges/401/fifoAnimalShelter/README.md "Whiteboard Challenge 12: FIFO Animal Shelter")
-
+13. [Whiteboard Challenge 13: Multi-bracket Validation](/code-challenges/401/multiBracketValidation/README.md "Whiteboard Challenge 13: Multi-bracket Validation")
 14. [Whiteboard Challenge 14: Eeney Meeney Miney Moe](/code-challenges/401/eeneyMeeneyMineyMoe/README.md "Whiteboard Challenge 14: Eeney Meeney Miney Moe")
