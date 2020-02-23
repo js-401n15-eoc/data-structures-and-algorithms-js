@@ -3,7 +3,7 @@
 const multiBracketValidation = input => {
   const dict = { '{': '}', '(': ')', '[': ']' };
   const parens = new Set(['{', '}', '(', ')', '[', ']']);
-  let stack = new Array();
+  const stack = new Array();
 
   for (let i in input) {
     if (!parens.has(input[i])) {
