@@ -2,8 +2,6 @@
 
 const { BinaryTree, BinarySearchTree } = require('./tree.js');
 
-// const binaryTree = new BinaryTree();
-
 describe('binary search tree', () => {
   let binarySearchTree;
   const addSomeNodes = () => {
@@ -31,6 +29,8 @@ describe('binary search tree', () => {
   });
 
   it('can look at a BST to see if it contains a given value', () => {
+    expect(binarySearchTree.contains(1)).toEqual(false);
+
     binarySearchTree.add(55);
     binarySearchTree.add(26);
     binarySearchTree.add(13);
