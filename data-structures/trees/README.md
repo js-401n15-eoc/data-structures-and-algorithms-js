@@ -22,16 +22,16 @@ Create a BinarySearchTree class
 
 ### Efficiency
 
-**preOrder()**: O(N)
-**inOrder()**: O(N)
-**postOrder()**: O(N)
-**add()**: O(h), where h = tree height (worst case O(N))
-**contains()**: O(h), where h = tree height (worst case O(N))
+1. **preOrder()**: O(N)
+2. **inOrder()**: O(N)
+3. **postOrder()**: O(N)
+4. **add()**: O(h), where h = tree height (worst case O(N))
+5. **contains()**: O(h), where h = tree height (worst case O(N))
 
 ## API
 
-**preOrder()**: traverses tree in the order of root, left, right
-**inOrder()**: traverses tree in the order of left, root, right
-**postOrder()**: traverses tree in the order of left, right, root
-**add()**: adds a node to the BST containing a given value (further left for smaller and right for larger values)
-**contains()**: traverses tree to find a given value
+1. **preOrder()**: traverses tree in the order of root, left, right
+2. **inOrder()**: traverses tree in the order of left, root, right
+3. **postOrder()**: traverses tree in the order of left, right, root
+4. **add()**: adds a node to the BST containing a given value (further left for smaller and right for larger values)
+5. **contains()**: traverses tree to find a given value
