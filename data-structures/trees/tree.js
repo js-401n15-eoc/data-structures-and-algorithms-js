@@ -9,6 +9,10 @@ class BinaryTree {
 
   // root, left, right traversal
   preOrder(node) {
+    if (!node) {
+      return;
+    }
+
     console.log(node.val);
 
     if (node.left) {
@@ -22,6 +26,10 @@ class BinaryTree {
 
   // left, root, right traversal
   inOrder(node) {
+    if (!node) {
+      return;
+    }
+
     if (node.left) {
       this.inOrder(node.left);
     }
@@ -35,6 +43,10 @@ class BinaryTree {
 
   // left, right, root traversal
   postOrder(node) {
+    if (!node) {
+      return;
+    }
+
     if (node.left) {
       this.postOrder(node.left);
     }
@@ -53,12 +65,7 @@ class BinarySearchTree extends BinaryTree {
   }
 
   add(val) {
-    if (val === this.root.val) {
-      console.log('value already exists!');
-      return;
-    }
-
-    node = new Node(val);
+    const node = new Node(val);
 
     if (!this.root) {
       this.root = node;
@@ -66,33 +73,30 @@ class BinarySearchTree extends BinaryTree {
     }
 
     let breadth = new Queue();
-    breadth.enqueue(root);
+    breadth.enqueue(this.root);
 
     while (breadth.peek()) {
       const front = breadth.dequeue();
 
       if (val === front.val) {
-        console.log('value already exists!');
         return;
       }
 
       if (val < front.val) {
-        if (!front.left) {
-          front.left = node;
-          console.log(`Added ${val} to the left of ${front.val}`);
-          return;
-        } else {
+        if (front.left) {
           breadth.enqueue(front.left);
+        } else {
+          front.left = node;
+          return;
         }
       }
 
-      if (value > front.val) {
-        if (!front.right) {
-          front.right = node;
-          console.log(`Added ${val} to the right of ${front.val}`);
-          return;
-        } else {
+      if (val > front.val) {
+        if (front.right) {
           breadth.enqueue(front.right);
+        } else {
+          front.right = node;
+          return;
         }
       }
     }
@@ -102,13 +106,13 @@ class BinarySearchTree extends BinaryTree {
     if (!this.root) {
       return false;
     }
+
+    return this.searchHelper(this.root, val);
   }
 
   searchHelper(node, val) {
-    if (root) {
-      const newNode = new Node(val);
+    if (node) {
       if (val === node.val) {
-        console.log(`Found a match with the value ${root.val}!`);
         return true;
       }
 
