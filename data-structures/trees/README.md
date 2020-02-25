@@ -30,4 +30,8 @@ Create a BinarySearchTree class
 
 ## API
 
-<!-- Description of each method publicly available in each of your trees -->
+**preOrder()**: traverses tree in the order of root, left, right
+**inOrder()**: traverses tree in the order of left, root, right
+**postOrder()**: traverses tree in the order of left, right, root
+**add()**: adds a node to the BST containing a given value (further left for smaller and right for larger values)
+**contains()**: traverses tree to find a given value
