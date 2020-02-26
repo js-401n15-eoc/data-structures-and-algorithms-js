@@ -6,7 +6,7 @@ const fizzBuzzTree = (bTree) => {
   }
 
   return bTree;
-}
+};
 
 const fizzBuzzHelper = (node) => {
   if (node && typeof node.val === 'number') {
@@ -23,5 +23,6 @@ const fizzBuzzHelper = (node) => {
 
     fizzBuzzHelper(node.left) || fizzBuzzHelper(node.right);
   }
-}
+};
+
 module.exports = fizzBuzzTree;

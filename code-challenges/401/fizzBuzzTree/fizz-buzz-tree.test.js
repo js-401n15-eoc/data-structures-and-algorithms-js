@@ -14,6 +14,7 @@ describe('fizzBuzzTree', () => {
     binaryTree.root.right = new Node(15);
     binaryTree.root.right.right = new Node(6);
     binaryTree.root.left.left = new Node(1);
+    binaryTree.root.left.left.right = new Node(9);
     binaryTree.root.left.right = new Node(2);
     fizzBuzzTree(binaryTree);
 
@@ -22,11 +23,12 @@ describe('fizzBuzzTree', () => {
     expect(binaryTree.root.right.val).toEqual('FizzBuzz');
     expect(binaryTree.root.right.right.val).toEqual('Fizz');
     expect(binaryTree.root.left.left.val).toEqual(1);
+    expect(binaryTree.root.left.left.right.val).toEqual('Fizz');
     expect(binaryTree.root.left.right.val).toEqual(2);
   });
 
   it('can handle an empty binary tree', () => {
     fizzBuzzTree(binaryTree);
     expect(binaryTree.root).toEqual(null);
-  })
+  });
 });
