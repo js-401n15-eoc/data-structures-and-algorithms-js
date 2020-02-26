@@ -1,5 +1,6 @@
 const fizzBuzzTree = require('./fizz-buzz-tree.js');
 const { Node, BinaryTree } = require('../../../data-structures/trees/tree.js');
+
 describe('fizzBuzzTree', () => {
   let binaryTree = new BinaryTree();
 

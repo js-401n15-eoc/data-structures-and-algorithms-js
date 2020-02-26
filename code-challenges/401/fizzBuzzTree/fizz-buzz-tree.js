@@ -1,7 +1,5 @@
 'use strict';
 
-// const { BinaryTree } = require('../../../data-structures/trees/tree.js');
-
 const fizzBuzzTree = (bTree) => {
   if (bTree && bTree.root) {
     fizzBuzzHelper(bTree.root);
