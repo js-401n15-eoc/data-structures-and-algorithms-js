@@ -72,7 +72,7 @@ class BinarySearchTree extends BinaryTree {
       return;
     }
 
-    let breadth = new Queue();
+    const breadth = new Queue();
     breadth.enqueue(this.root);
 
     while (breadth.peek()) {
