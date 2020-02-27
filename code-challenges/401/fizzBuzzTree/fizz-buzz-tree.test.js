@@ -22,9 +22,9 @@ describe('fizzBuzzTree', () => {
     expect(binaryTree.root.left.val).toEqual('Fizz');
     expect(binaryTree.root.right.val).toEqual('FizzBuzz');
     expect(binaryTree.root.right.right.val).toEqual('Fizz');
-    expect(binaryTree.root.left.left.val).toEqual(1);
+    expect(binaryTree.root.left.left.val).toEqual('1');
     expect(binaryTree.root.left.left.right.val).toEqual('Fizz');
-    expect(binaryTree.root.left.right.val).toEqual(2);
+    expect(binaryTree.root.left.right.val).toEqual('2');
   });
 
   it('can handle an empty binary tree', () => {
