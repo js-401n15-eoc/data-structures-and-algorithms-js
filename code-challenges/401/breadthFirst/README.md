@@ -1,4 +1,4 @@
-# Breadth-first Traversal
+# Breadth-First Traversal
 
 "Bread first" - Amanda Iverson
 
@@ -7,7 +7,7 @@
 Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
 
 Input:
-![binary tree](./binary-tree.png "binary tree")
+![binary tree](../../../assets/binary-tree.png "binary tree")
 
 Output: `[2,7,5,2,6,9,5,11,4]`
 
